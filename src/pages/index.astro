@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+import Logo from "../assets/img/tangobucolico_logo_rond.png";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="text-center">
+      <Image
+        class="mx-auto"
+        src={Logo}
+        width={300}
+        height={300}
+        format="webp"
+        alt="Logo Tango Bucolico"
+      />
+
+      <h1 class="text-5xl mb-4">Tango Bucolico</h1>
+      <p class="text-xl mb-2">Le tango bucolique à Crémieu</p>
+
+      <p>
+        Notre site internet arrive bientôt ! En attendant, vous pouvez recevoir
+        de nos nouvelles grâce à notre liste de diffusion par mail :
+      </p>
+
+      <div class="ml-embedded" data-form="eVDGbP"></div>
+
+      <p>
+        Vous pouvez aussi nous contacter par email à <a
+          class="underline"
+          href="mailto:contact@tangobucolico.com">contact@tangobucolico.com</a
+        >
+      </p>
+    </div>
+  </main>
+
+  <style></style>
+</Layout>
