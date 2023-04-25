@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components";
+import discussion from "../../assets/img/photos/discussion.jpg";
+---
+
+<div
+  class="mail-inscription-banner bg-gradient-to-r from-primaryMedium to-primary"
+>
+  <div class="container mx-auto my-8 py-10">
+    <div class="md:flex m-6">
+      <div class="flex-1 md:w-3/5">
+        <Image
+          class="object-cover h-96 w-full rounded-lg"
+          src={discussion}
+          width={700}
+          format="webp"
+          alt="Deux personnes discutent"
+        />
+      </div>
+      <div class="md:w-2/5 text-left text-light m-6">
+        <h2 class="text-3xl">Recevoir nos informations</h2>
+        <p>Saisissez votre email ci-dessous pour ne rater aucun évenement</p>
+        <div class="ml-embedded form-container text-light" data-form="eVDGbP">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style scoped>
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+</style>

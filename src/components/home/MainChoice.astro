@@ -1,0 +1,50 @@
+---
+import { Image } from "@astrojs/image/components";
+import festival from "../../assets/img/photos/orchestre.jpg";
+import milonga from "../../assets/img/photos/balphoto2.jpg";
+---
+
+<div class="container mx-auto my-6">
+  <div class="md:grid grid-cols-2 gap-8">
+    <div class="relative my-6">
+      <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
+      <div
+        class="absolute flex items-center justify-center text-white h-full w-full"
+      >
+        <div>
+          <p class="text-4xl">Milongas</p>
+          <p class="text-xl">Bals de tango argentin</p>
+        </div>
+      </div>
+
+      <div>
+        <Image
+          class="object-cover h-96 w-full rounded-lg"
+          src={milonga}
+          width={450}
+          format="webp"
+          alt="Bal de tango dans le cloitre"
+        />
+      </div>
+    </div>
+
+    <div class="relative my-6">
+      <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
+      <div
+        class="absolute flex items-center justify-center text-white h-full w-full"
+      >
+        <div>
+          <p class="text-4xl">Festival de Crémieu</p>
+          <p class="text-xl">Le festival de tango bucolique</p>
+        </div>
+      </div>
+      <Image
+        class="object-cover h-96 w-full rounded-lg"
+        src={festival}
+        width={450}
+        format="webp"
+        alt="Une musicienne dans un bal de tango argentin"
+      />
+    </div>
+  </div>
+</div>

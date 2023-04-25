@@ -2,9 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
 import Logo from "../assets/img/tangobucolico_logo_rond.png";
+import MailInscriptionBanner from "../components/home/MailInscriptionBanner.astro";
+import MainChoice from "../components/home/MainChoice.astro";
+const title = "Tango Bucolico, le tango argentin à Crémieu et ses environs";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
   <main>
     <div class="text-center">
       <Image
@@ -24,7 +27,9 @@ import Logo from "../assets/img/tangobucolico_logo_rond.png";
         de nos nouvelles grâce à notre liste de diffusion par mail :
       </p>
 
-      <div class="ml-embedded" data-form="eVDGbP"></div>
+      <MainChoice />
+
+      <MailInscriptionBanner />
 
       <p>
         Vous pouvez aussi nous contacter par email à <a
