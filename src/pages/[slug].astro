@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const pages = await Astro.glob("../content/**/*.md*");
+
+  return pages.map((page) => ({
+    params: {
+      slug: page.frontmatter.slug,
+    },
+    props: {
+      page,
+    },
+  }));
+}
+
+const { Content } = Astro.props.page;
+const { title } = Astro.props.page.frontmatter;
+---
+
+<Layout title="test">
+  <div class="container mx-auto">
+    <article>
+      <h1 class="text-5xl">{title}</h1>
+
+      <div class="mt-4">
+        <Content />
+      </div>
+    </article>
+  </div>
+</Layout>
