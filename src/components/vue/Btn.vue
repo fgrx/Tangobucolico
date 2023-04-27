@@ -29,11 +29,11 @@ const emits = defineEmits(["click", "btn-click"]);
 const clickAction = () => emits("click", "btn-click");
 
 const bgColorComputed = computed(() =>
-  disabledRef.value ? "gray-400" : color
+  disabledRef.value ? "primaryMedium" : color
 );
 
 const textColorComputed = computed(() =>
-  disabledRef.value ? "gray-600" : textColor
+  disabledRef.value ? "light" : textColor
 );
 </script>
 
@@ -43,7 +43,7 @@ const textColorComputed = computed(() =>
       @click="clickAction"
       :type="typeButton"
       :disabled="disabled"
-      :class="`inline-block pulse px-6 py-3 text-md font-medium leading-6 text-center text-${textColorComputed}  transition bg-${bgColorComputed} hover:text-secondary  hover:border-white hover:border-1 rounded shadow ripple hover:shadow-lg focus:outline-none `"
+      :class="`inline-block pulse px-6 py-3 text-md font-medium leading-6 text-center text-${textColorComputed}  transition bg-${bgColorComputed}  rounded shadow ripple focus:outline-none `"
     >
       <span class="uppercase">
         <slot></slot>
@@ -79,14 +79,10 @@ button {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #2f2d2e;
-    color: "#fdea43";
-
     transition: all 0.3s;
     z-index: -1;
   }
   &:hover {
-    color: "#fdea43";
     &:before {
       width: 100%;
     }

@@ -101,7 +101,7 @@ export default {
           class="text-left"
           name="contact"
           method="POST"
-          data-netlify="true"
+          netlify
         >
           <p class="mt-5">
             <label class="block font-semibold"
@@ -139,19 +139,11 @@ export default {
             <div class="flex">
               <Btn
                 @click="sendMessage"
+                color="primary"
                 typeButton="button"
-                class="mt-5 mr-2"
+                class="mt-5 mr-2 "
                 :disabled="!isFormCompleted"
                 >Envoyer</Btn
-              >
-
-              <Btn
-                v-if="hasCloseButton"
-                @click="closeAction"
-                typeButton="button"
-                class="mt-5 mr-2"
-                color="black"
-                >Fermer</Btn
               >
 
             </div>
