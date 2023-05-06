@@ -1,0 +1,33 @@
+---
+export interface Props {
+  order: "imageText" | "textImage";
+  bgcolor: string;
+}
+
+const { order, bgcolor } = Astro.props;
+
+const content1 = order === "imageText" ? "md:3/5" : "md:2/5 ";
+const content2 = order === "imageText" ? "md:2/5" : "md:3/5";
+---
+
+<div class=`md:p-1 bg-${bgcolor}`>
+  <div class=` container mx-auto my-20 md:flex md:flex-row md:gap-8`>
+    <div class=`basis-${content1} flex-1 content`>
+      <slot name="content1" />
+    </div>
+
+    <div class=`basis-${content2} flex-1 content`>
+      <slot name="content2" />
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  .content {
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+</style>

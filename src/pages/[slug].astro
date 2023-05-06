@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
 
 export async function getStaticPaths() {
   const pages = await Astro.glob("../content/**/*.md*");
@@ -15,17 +16,55 @@ export async function getStaticPaths() {
 }
 
 const { Content } = Astro.props.page;
-const { title } = Astro.props.page.frontmatter;
+const { image, title, description, subtitle } = Astro.props.page.frontmatter;
 ---
 
-<Layout title="test">
-  <div class="container mx-auto">
-    <article>
-      <h1 class="text-5xl">{title}</h1>
-
-      <div class="mt-4">
-        <Content />
+<Layout title={title}>
+  <article>
+    <div class="flex items-center justify-center container mx-auto">
+      <div class="text-center w-1/2 mt-12">
+        <h1 class="uppercase text-5xl font-bold">{title}</h1>
+        <p class="mt-4 text-3xl font-semibold">{subtitle}</p>
+        <p class="mt-4 text-2xl">{description}</p>
       </div>
-    </article>
-  </div>
+    </div>
+
+    <!-- <div class="header w-full relative">
+      <div
+        class="absolute flex items-center justify-center text-white h-full w-full"
+      >
+        <div class="container mx-auto relative">
+          <div class="text-center border-1 w-1/2">
+            <h1 class="text-5xl">{title}</h1>
+            <p class="mt-4 text-3xl">{subtitle}</p>
+            <p class="mt-4 text-2xl">{description}</p>
+          </div>
+        </div>
+      </div>
+
+      <Image
+        src={image}
+        width={1000}
+        height={600}
+        format="webp"
+        alt="photo du festival"
+        class="object-cover"
+      />
+    </div> -->
+
+    <div class="mt-4">
+      <Content />
+    </div>
+  </article>
 </Layout>
+
+<style>
+  .header {
+    height: 60vh;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+</style>

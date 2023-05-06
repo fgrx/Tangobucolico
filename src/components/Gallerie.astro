@@ -1,0 +1,47 @@
+---
+import { Image } from "@astrojs/image/components";
+
+interface Image {
+  image: string;
+  title?: string;
+  description?: string;
+}
+
+export interface Props {
+  content: Image[];
+  bgColor: string;
+  title: string;
+}
+
+const { title, content, bgColor } = Astro.props;
+---
+
+<div class=`bg-${bgColor}`>
+  <div class="container mx-auto my-6 py-6">
+    <div class="text-center"><h2>{title}</h2></div>
+
+    <div class="md:flex flex-row gap-4">
+      {
+        content.map((item) => (
+          <div class="flex-1">
+            <Image
+              class="object-cover h-96 w-full rounded-lg"
+              src={item.image}
+              width={450}
+              format="webp"
+              aspectRatio={16 / 9}
+              alt=""
+            />
+            <p class="text-center">
+              <>
+                <span class="text-2xl">{item.title}</span>
+                <br />
+              </>
+              <span class="text-lg text-center">{item.description}</span>
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
