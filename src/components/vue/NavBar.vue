@@ -25,7 +25,7 @@ onMounted(() => {
         <a :href="siteUrl">
           <div class="flex h-16 items-center">
             <img
-              src="../../assets/img/tangobucolico_logo_rose.png"
+              src="/img/assets/tangobucolico_logo_rose.png"
               width="50"
               height="auto"
               alt="Logo de Tango Bucolico"
