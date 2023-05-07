@@ -32,7 +32,7 @@ onMounted(() => {
               class="ml-2 md:ml-0"
             />
 
-            <div class="title-site ml-4 text-white text-xl font-bold uppercase">
+            <div class="title-site ml-4 text-white text-3xl font-bold">
               Tango Bucolico
             </div>
           </div>
@@ -62,7 +62,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="float-right items-center mr-2 md:ml-0">
+      <div class="float-right items-center mt-3 mr-2 md:ml-0">
         <label for="menu-toggle" class="cursor-pointer md:hidden block">
           <button
             class="text-customGreenDark"
@@ -71,7 +71,7 @@ onMounted(() => {
           >
             <svg
               fill="none"
-              stroke="currentColor"
+              stroke="white"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
@@ -108,14 +108,14 @@ onMounted(() => {
       </div>
     </transition>
     <aside
-      class="-ml-64 transform text-white top-0 left-0 w-64 bg-menu fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 pt-4"
+      class="-ml-64 transform text-center bg-primary text-white top-0 left-0 w-64 bg-menu fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 pt-4"
       :class="isOpen ? 'translate-x-0 ml-0' : '-translate-x-full'"
     >
       <a :href="siteUrl">
         <img
           src="../../assets/img/tangobucolico_logo_detour.png"
-          width="220"
-          height="40"
+          width="100"
+          height="auto"
           alt="Logo de Tango Bucolico"
           class="logo-white mx-auto"
         />
