@@ -16,10 +16,11 @@ export async function getStaticPaths() {
 }
 
 const { Content } = Astro.props.page;
-const { image, title, description, subtitle } = Astro.props.page.frontmatter;
+const { image, title, description, subtitle, ogImage } =
+  Astro.props.page.frontmatter;
 ---
 
-<Layout title={title}>
+<Layout title={title} ogImage={ogImage}>
   <article>
     <div class="bg-primaryLight p-0">
       <div class="header flex items-center justify-center container mx-auto">

@@ -6,9 +6,10 @@ import Footer from "../components/Bottom.astro";
 
 export interface Props {
   title: string;
+  ogImage:String;
 }
 
-const { title } = Astro.props;
+const { title, ogImage } = Astro.props;
 
 const fonts =
   "https://fonts.googleapis.com/css2?family=Average+Sans&family=Birthstone+Bounce:wght@500&family=Rufina:wght@700&display=swap";
@@ -25,6 +26,12 @@ const fonts =
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href={fonts} rel="preload" as="style" />
+
+    {ogImage && <meta
+      property="”og:image”"
+      content=`https://tangobucolico.com${ogImage}`
+    />
+    }
 
     <link
       rel="stylesheet"
@@ -59,6 +66,7 @@ const fonts =
     <title>{title}</title>
   </head>
   <body class="bg-background text-dark">
+
     <NavBar client:load siteUrl="/" menus={menus} />
     <slot />
 
