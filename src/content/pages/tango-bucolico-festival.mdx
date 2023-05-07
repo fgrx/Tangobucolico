@@ -76,7 +76,7 @@ import { Image } from "@astrojs/image/components";
 <Image slot="content2" src="/img/photos/abrazo.jpg" aspectRatio="16:9" width={800} format="webp" alt="Bandonéon posé sur une chaise" />
 
 <section>
-    <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+    <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4">
         <Person title="Roulotte Tango" image="/img/photos/festival/roulotte.jpg" content="Orchestre du samedi soir" location="" />
         <Person title="TDJ Hakim Akli" image="/img/photos/festival/hakim.jpg" content="S   amedi soir et démonstration" location="Paris" />
         <Person title="TDJ Vincent Limeul" image="/img/photos/festival/limeul.jpg" content="Dimanche après-midi" location="Paris" />
@@ -106,7 +106,7 @@ import { Image } from "@astrojs/image/components";
             href="https://www.helloasso.com/associations/tango-bucolico/evenements/festival-tango-bucolico-2023"
             
         >
-            <Btn typeButton="button">Réserver sur Helloasso</Btn>
+            <Btn class="mb-6" typeButton="button">Réserver sur Helloasso</Btn>
         </a>
     </div>
 

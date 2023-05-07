@@ -113,7 +113,7 @@ onMounted(() => {
     >
       <a :href="siteUrl">
         <img
-          src="../../assets/img/tangobucolico_logo_detour.png"
+          src="/img/assets/tangobucolico_logo_detour.png"
           width="100"
           height="auto"
           alt="Logo de Tango Bucolico"
@@ -126,7 +126,7 @@ onMounted(() => {
           <li
             v-for="(menu, index) in menus"
             :key="index"
-            class="font-medium text-lg py-2 px-2 text-center list-none font-semi-bold"
+            class="font-semibold text-xl py-2 px-2 text-center list-none font-semi-bold"
             @click="isOpen = false"
           >
             <a :href="menu.url">{{ menu.title }}</a>
