@@ -126,6 +126,13 @@ declare module 'astro:content' {
   collection: "pages",
   data: any
 } & { render(): Render[".mdx"] },
+"milongas.mdx": {
+  id: "milongas.mdx",
+  slug: "milongas-bals-de-tango",
+  body: string,
+  collection: "pages",
+  data: any
+} & { render(): Render[".mdx"] },
 "tango-bucolico-festival.mdx": {
   id: "tango-bucolico-festival.mdx",
   slug: "tango-bucolico-festival",
