@@ -16,6 +16,8 @@ module.exports = {
         background: "#fdfaee",
         dark: "#414141",
         light: "#fff",
+        menuLight: "#b0cf76",
+        menuDark: "#65a30d",
       },
     },
   },
@@ -28,6 +30,7 @@ module.exports = {
     "bg-background",
     "bg-backgroundDarker",
     "bg-dark",
+    "bg-menu",
   ],
   plugins: [require("@tailwindcss/forms")],
 };

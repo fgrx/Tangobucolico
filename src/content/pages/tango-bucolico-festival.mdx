@@ -62,9 +62,10 @@ import { Image } from "@astrojs/image/components";
 <Gallerie title="On danse où ? " bgColor="primaryLight" content={ [{image:"/img/photos/cremieu/cloitre.jpg",title:"Le cloître",description:"Dansez les dalles polies par l'histoire"},{image:"/img/photos/cremieu/nation.jpg",title:"Place de la nation", description:"la place la plus bucolique de la ville au milieu des térasses des restaurants et des cafés"},{image:"/img/photos/cremieu/salledesfetes.jpg",title:"Salle des fêtes",description:"Un parquet immense en plein centre de Crémieu"}]} />
 
 <section>
-    <div class="my-16 container mx-auto grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+    <div class="my-16 container mx-4 mx-auto grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-5">
         <Person title="Roulotte Tango" image="/img/photos/festival/roulotte.jpg" content="Orchestre du samedi soir" location="" />
         <Person title="TDJ Hakim Akli" image="/img/photos/festival/hakim.jpg" content="DJ du samedi soir et démonstration" location="Paris" />
+        <Person title="Barbara Frey" image="/img/photos/festival/barbarafrey.jpg" content="Stages samedi et dimanche" location="Lyon" />
         <Person title="TDJ Vincent Limeul" image="/img/photos/festival/limeul.jpg" content="DJ du dimanche après-midi" location="Paris" />
         <Person title="TDJ Fabien Grignoux" image="/img/photos/festival/fabien.jpg" content="Ouvre le bal le samedi soir" location="Lyon / Crémieu" />
     </div>
@@ -77,8 +78,8 @@ import { Image } from "@astrojs/image/components";
 <section>
     <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
         <Person title="Roulotte Tango" image="/img/photos/festival/roulotte.jpg" content="Orchestre du samedi soir" location="" />
-        <Person title="TDJ Hakim Akli" image="/img/photos/festival/hakim.jpg" content="DJ du samedi soir et démonstration" location="Paris" />
-        <Person title="TDJ Vincent Limeul" image="/img/photos/festival/limeul.jpg" content="DJ du dimanche après-midi" location="Paris" />
+        <Person title="TDJ Hakim Akli" image="/img/photos/festival/hakim.jpg" content="S   amedi soir et démonstration" location="Paris" />
+        <Person title="TDJ Vincent Limeul" image="/img/photos/festival/limeul.jpg" content="Dimanche après-midi" location="Paris" />
         <Person title="TDJ Fabien Grignoux" image="/img/photos/festival/fabien.jpg" content="Ouvre le bal le samedi soir" location="Lyon / Crémieu" />
     </div>
 </section>
@@ -116,13 +117,11 @@ import { Image } from "@astrojs/image/components";
 
 
 
-
-
 <TextWithImage order="imageText">
 <Image slot="content1" src="/img/photos/pied4.jpg" aspectRatio="16:9" width={1000} format="webp" alt="Bandonéon posé sur une chaise" />
 
 <section slot="content2">
-## Contact & informations
+## Une question ?
 <ContactForm client:load />
 </section>
 </TextWithImage>

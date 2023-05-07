@@ -11,12 +11,12 @@ const content2 = order === "imageText" ? "md:2/5" : "md:3/5";
 ---
 
 <div class=`md:p-1 bg-${bgcolor}`>
-  <div class=` container mx-auto my-20 md:flex md:flex-row md:gap-8`>
-    <div class=`basis-${content1} flex-1 content`>
+  <div class=` container mx-auto my-20 md:flex md:flex-row md:gap-8 px-4`>
+    <div class=`basis-${content1} flex-1 content `>
       <slot name="content1" />
     </div>
 
-    <div class=`basis-${content2} flex-1 content`>
+    <div class=`basis-${content2} flex-1 content `>
       <slot name="content2" />
     </div>
   </div>

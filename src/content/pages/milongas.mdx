@@ -1,0 +1,32 @@
+---
+title: "Milongas"
+slug: "milongas-bals-de-tango"
+description: "Nous organisons des milongas (des bals de tango argentin) dans les alentours de Crémieu. Avec de la bonne musique, une ambiance décontractée et de quoi grignoter pour danser !"
+---
+import Container from "../../components/Container.astro"
+import TextWithImage from "../../components/TextWithImage.astro"
+import { Image } from "@astrojs/image/components";
+
+
+<Container>
+
+<TextWithImage order="imageText">
+
+<Image slot="content1" src="/img/photos/balphoto.jpg" aspectRatio="16:9" width={800} format="webp" alt="Jambes qui dansent" />
+
+
+<section slot='content2'>
+Pour l'instant aucune milonga n'est prévue.  
+Mais nous y travaillons ! 
+
+**N'hésitez pas à vous inscrire à notre lettre d'informations pour ne rien rater !**
+
+<p>Saisissez votre email ci-dessous pour ne rater aucun évenement</p>
+<div class="ml-embedded form-container text-dark" data-form="eVDGbP" />
+
+</section>
+</TextWithImage>
+</Container>
+
+
+
