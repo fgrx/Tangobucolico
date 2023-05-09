@@ -4,7 +4,9 @@ import { Image } from "@astrojs/image/components";
 import Logo from "../assets/img/tangobucolico_logo_rond.png";
 import MailInscriptionBanner from "../components/home/MailInscriptionBanner.astro";
 import MainChoice from "../components/home/MainChoice.astro";
-const title = "Tango Bucolico, le tango argentin à Crémieu et ses environs";
+import TextWithImage from "../components/TextWithImage.astro";
+
+const title = "Tango Bucólico, le tango argentin à Crémieu et ses environs";
 ---
 
 <Layout title={title}>
@@ -16,15 +18,45 @@ const title = "Tango Bucolico, le tango argentin à Crémieu et ses environs";
         width={300}
         height={300}
         format="webp"
-        alt="Logo Tango Bucolico"
+        alt="Logo de Tango Bucólico"
       />
 
-      <h1 class="title-site text-5xl mb-4">Tango Bucolico</h1>
-      <p class="text-xl mb-2">Le tango bucolique à Crémieu</p>
+      <h1 class="title-site text-5xl mb-4">Tango Bucólico</h1>
+      <p class="text-xl mb-2">Dansez le tango argentin en Nord-Isère</p>
 
       <MainChoice />
 
       <MailInscriptionBanner />
+
+      <TextWithImage>
+        <div slot="content1">
+          <h2>Qui sommes-nous ?</h2>
+          <p>
+            Tango Bucólico, c’est une équipe de passionnées lancée dans la folle
+            aventure d’un festival à Crémieu à ciel ouvert, avec grand
+            orchestre, parquet sous les étoiles et tangueros de tous horizons.
+          </p>
+          <p>
+            Tango Bucólico c’est aussi le désir de faire vivre cette danse au
+            quotidien dans la région, avec des cours, des pratiques, des
+            ateliers, des bals… et des fleurs ! Le Tango Argentin embrasse mille
+            réalités, mille styles et imaginaires mais, au fond, c’est une danse
+            où l’on trouve bonheur à aller vers l’autre, à l’écouter au plus
+            juste pour marcher ensemble. Alors bienvenue à vous !
+          </p>
+        </div>
+
+        <div slot="content2">
+          <Image
+            class="mx-auto"
+            src="/img/photos/flou.jpg"
+            width={800}
+            height={500}
+            format="webp"
+            alt="Logo de Tango Bucólico"
+          />
+        </div>
+      </TextWithImage>
     </div>
   </main>
 </Layout>

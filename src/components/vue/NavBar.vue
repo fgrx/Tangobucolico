@@ -28,12 +28,12 @@ onMounted(() => {
               src="/img/assets/tangobucolico_logo_rose.png"
               width="50"
               height="auto"
-              alt="Logo de Tango Bucolico"
+              alt="Logo de Tango Bucólico"
               class="ml-2 md:ml-0"
             />
 
             <div class="title-site ml-4 text-white text-3xl font-bold">
-              Tango Bucolico
+              Tango Bucólico
             </div>
           </div>
         </a>
@@ -116,7 +116,7 @@ onMounted(() => {
           src="/img/assets/tangobucolico_logo_detour.png"
           width="100"
           height="auto"
-          alt="Logo de Tango Bucolico"
+          alt="Logo de Tango Bucólico"
           class="logo-white mx-auto"
         />
       </a>
