@@ -113,7 +113,7 @@ onMounted(() => {
     >
       <a :href="siteUrl">
         <img
-          src="/img/assets/tangobucolico_logo_detour.png"
+          src="/img/assets/tangobucolico_logo_detour.webp"
           width="100"
           height="auto"
           alt="Logo de Tango Bucólico"
