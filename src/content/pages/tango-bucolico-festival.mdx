@@ -176,10 +176,54 @@ import { Image } from "@astrojs/image/components";
 </TextWithImage>
 
 <TextWithImage order="imageText">
-<Image slot="content1" src="/img/photos/pied4.jpg" aspectRatio="16:9" width={1000} format="webp" alt="Bandonéon posé sur une chaise" />
 
-<section slot="content2">
-## Une question ?
-<ContactForm client:load />
+{" "}
+
+<Image
+  slot="content1"
+  src="/img/photos/orchestre.jpg"
+  aspectRatio="16:9"
+  width={1000}
+  format="webp"
+  alt="Un orchestre de tango qui joue"
+/>
+
+  <section slot="content2">
+    ## Informations pratiques
+
+    ### Pensez au covoiturage !
+    Faire la route à plusieurs c'est beaucoup plus sympa ! Si vous avez des sièges libres dans votre voiture ou si vous cherchez une petite place jusqu'à Crémieu, n'hésitez pas à cliquer sur le bouton ci-dessous pour vous organiser.
+
+    <div class="mt-6 text-center">
+        <a
+            target="_blank"
+            href="https://www.covievent.org/covoiturage/festival-tango-bucolico/181d87e9dc9fc1c5f5702efd56a46bf1"
+
+        >
+            <Btn class="mb-6" typeButton="button">Proposer ou rejoindre un covoiturage</Btn>
+        </a>
+    </div>
+
+    ### Apportez votre gobelet
+    Danser ça donne soif ! Pour se ravitailler, des gobelets consignés seront mis à disposition. Cependant, nous vous conseillons d'apporter le votre pour éviter les temps d'attente et limiter les risques de rupture de stock.
+
+  </section>
+</TextWithImage>
+
+<TextWithImage order="imageText">
+
+<Image
+  slot="content2"
+  src="/img/photos/pied4.jpg"
+  aspectRatio="16:9"
+  width={1000}
+  format="webp"
+  alt="des jambes de danseurs"
+/>
+
+<section slot="content1">
+  ## Une question ?
+  <ContactForm client:load />
 </section>
+
 </TextWithImage>
