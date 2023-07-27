@@ -3,23 +3,103 @@ title: "Milongas"
 slug: "milongas-bals-de-tango"
 description: "Nous organisons des milongas (des bals de tango argentin) dans les alentours de Crémieu. Avec de la bonne musique, une ambiance décontractée et de quoi grignoter pour danser !"
 ---
-import Container from "../../components/Container.astro"
-import TextWithImage from "../../components/TextWithImage.astro"
-import { Image } from "@astrojs/image/components";
 
+import Container from "../../components/Container.astro";
+import TextWithImage from "../../components/TextWithImage.astro";
+import { Image } from "@astrojs/image/components";
+import Person from "../../components/Person.astro";
 
 <Container>
 
+
 <TextWithImage order="imageText">
 
-<Image slot="content1" src="/img/photos/balphoto.jpg" aspectRatio="16:9" width={800} format="webp" alt="Jambes qui dansent" />
-
+<Image
+  slot="content1"
+  src="/img/photos/milongas/milongacloitre.png"
+  aspectRatio="16:9"
+  width={800}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
 
 <section slot='content2'>
-Pour l'instant aucune milonga n'est prévue.  
-Mais nous y travaillons ! 
+## Dimanche 13 Août 2023, 16h-22h
 
-**N'hésitez pas à vous inscrire à notre lettre d'informations pour ne rien rater !**
+Venez danser au frais, à l'ombre de notre beau cloître aux dalles pluricentenaires.
+
+Musicalisation par Jitep :  
+Tangos traditionnels & néotango
+
+Lieu : Le cloître de Crémieu  
+Entrée : Adhérents 7€ / Non adhérents 9€
+
+Possibilité de rafraîchissements dans les deux bars à l'entrée du cloître.
+
+    <Person
+        title="TDJ Jtep"
+        content="De Lyon"
+      image="/img/photos/djs/jtep.png"
+      size="64"
+      center={true}
+    />
+
+</section>
+</TextWithImage>
+
+
+
+
+<TextWithImage order="imageText">
+
+<Image
+  slot="content1"
+  src="/img/photos/milongas/milongacloitre2.jpeg"
+  aspectRatio="16:9"
+  width={800}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
+
+<section slot='content2'>
+## Dimanche 3 Septembre, 15h-20h
+
+Notre désormais traditionnelle milonga de rentrée sera musicalisée par Maryline.
+
+Et nous aurons le plaisir de danser également sur de la musique vivante, grâce à la présence du duo En Lusdé (Nico el Típico guitare & Pablo Amado bandonéon) !
+
+Lieu : Le cloître de Crémieu  
+Entrée : Adhérents 10€ / Non Adhérents 12€
+
+Possibilité de rafraîchissements dans les deux bars à l'entrée du cloître.
+
+    <Person
+        title="TDJ Maryline"
+        content="De Lyon"
+      image="/img/photos/djs/maryline.jpg"
+      size="64"
+      center={true}
+    />
+
+</section>
+</TextWithImage>
+
+
+
+
+<TextWithImage order="imageText">
+
+<Image
+  slot="content2"
+  src="/img/photos/newsletter.jpg"
+  aspectRatio="16:9"
+  width={800}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
+
+<section slot='content1'>
+<h2>Ne ratez aucune milonga en vous abonnant à notre newsletter</h2>
 
 <p>Saisissez votre email ci-dessous pour ne rater aucun évenement</p>
 <div class="ml-embedded form-container text-dark" data-form="eVDGbP" />
@@ -27,6 +107,3 @@ Mais nous y travaillons !
 </section>
 </TextWithImage>
 </Container>
-
-
-
