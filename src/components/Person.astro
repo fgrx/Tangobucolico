@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 export interface Props {
   title: string;
@@ -27,14 +27,16 @@ if (size) {
 <div
   class={`${mainClass}flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-primary rounded-xl`}
 >
-  <Image
-    class="object-cover rounded-full ring-4 ring-gray-300"
-    src={image}
-    alt=""
-    format="webp"
-    height={128}
-    width={128}
-  />
+  <div class="portrait-image">
+    <Image
+      class=" object-cover rounded-full ring-4 ring-gray-300 w-150 h-150"
+      src={image}
+      alt=""
+      format="webp"
+      height={150}
+      width={150}
+    />
+  </div>
 
   <h1
     class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white"
@@ -50,3 +52,16 @@ if (size) {
     {location}
   </p>
 </div>
+
+<style scoped>
+img{
+  height:100% !important;
+  width:100% !important;
+}
+
+.portrait-image{
+  height:170px !important;
+  width:170px !important;
+}
+
+</style>

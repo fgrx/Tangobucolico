@@ -2,17 +2,22 @@
 title: "Mentions légales"
 slug: "mentions-legales"
 ---
-import Container from "../../components/Container.astro"
-import TextWithImage from "../../components/TextWithImage.astro"
-import { Image } from "@astrojs/image/components";
 
+import Container from "../../components/Container.astro";
+import TextWithImage from "../../components/TextWithImage.astro";
+import { Image } from "astro:assets";
 
 <Container>
 
 <TextWithImage order="imageText">
 
-<Image slot="content1" src="/img/photos/flou.jpg" aspectRatio="16:9" width={800} format="webp" alt="Jambes qui dansent" />
-
+<Image
+  slot="content1"
+  src="/img/photos/flou.jpg"
+  width={800}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
 
 <section slot='content2'>
     **Photos**  
@@ -29,8 +34,7 @@ Netlify
 610 22nd Street, Suite 315,  
 San Francisco, CA 94107  
 Site web : [https://www.netlify.com](https://www.netlify.com)
-        </section>
+</section>
+
 </TextWithImage>
 </Container>
-
-

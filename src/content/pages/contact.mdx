@@ -7,13 +7,13 @@ description: "Une question ? Utilisez le formulaire de contact ci-dessous :"
 import Container from "../../components/Container.astro";
 import ContactForm from "../../components/vue/ContactForm.vue";
 import TextWithImage from "../../components/TextWithImage.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 <Container>
 
 <TextWithImage order="imageText">
 
-        <Image slot="content1" src="/img/photos/parada2.jpg" aspectRatio="16:9" width={800} format="webp" alt="Jambes qui dansent" />
+        <Image slot="content1" src="/img/photos/parada2.jpg" width={800}   height={500} format="webp" alt="Jambes qui dansent" />
 
         <section slot='content2'>
             <ContactForm client:load />

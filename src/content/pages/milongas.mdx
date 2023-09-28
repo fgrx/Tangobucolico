@@ -6,7 +6,7 @@ description: "Nous organisons des milongas (des bals de tango argentin) dans les
 
 import Container from "../../components/Container.astro";
 import TextWithImage from "../../components/TextWithImage.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Person from "../../components/Person.astro";
 
 <Container>
@@ -16,8 +16,8 @@ import Person from "../../components/Person.astro";
 <Image
   slot="content1"
   src="/img/photos/milongas/milongacloitre2.jpeg"
-  aspectRatio="16:9"
   width={800}
+  height={500}
   format="webp"
   alt="Jambes qui dansent"
 />
@@ -30,7 +30,7 @@ Notre désormais traditionnelle milonga de rentrée sera musicalisée par Maryli
 Et nous aurons le plaisir de danser également sur de la musique vivante, grâce à la présence du duo En Lusdé (Nico el Típico guitare & Pablo Amado bandonéon) !
 
 Lieu : Le cloître de Crémieu  
-Entrée : Adhérents 10€ / Non Adhérents 12€
+Entrée : Adhérents 9€ / Non Adhérents 12€
 
 Possibilité de rafraîchissements dans les deux bars à l'entrée du cloître.
 
@@ -50,8 +50,8 @@ Possibilité de rafraîchissements dans les deux bars à l'entrée du cloître.
 <Image
   slot="content2"
   src="/img/photos/newsletter.jpg"
-  aspectRatio="16:9"
   width={800}
+  height={500}
   format="webp"
   alt="Jambes qui dansent"
 />

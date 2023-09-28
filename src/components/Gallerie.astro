@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 interface Image {
   image: string;
@@ -28,8 +28,8 @@ const { title, content, bgColor } = Astro.props;
               class="object-cover h-96 w-full rounded-lg"
               src={item.image}
               width={450}
+              height={300}
               format="webp"
-              aspectRatio={16 / 9}
               alt=""
             />
             <p class="text-center mt-3">
