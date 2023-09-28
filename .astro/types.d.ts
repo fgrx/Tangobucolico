@@ -206,6 +206,20 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
+"pratiques.mdx": {
+	id: "pratiques.mdx";
+  slug: "pratiques-de-tango";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdx"] };
+"tango-bucolico-festival-2023 copy.mdx": {
+	id: "tango-bucolico-festival-2023 copy.mdx";
+  slug: "tango-bucolico-festival";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdx"] };
 "tango-bucolico-festival.mdx": {
 	id: "tango-bucolico-festival.mdx";
   slug: "tango-bucolico-festival";

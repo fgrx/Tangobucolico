@@ -1,0 +1,64 @@
+---
+title: "Pratiques de tango argentin"
+slug: "pratiques-de-tango"
+description: "Pour travailler son tango, tester, expérimenter et se retrouver, rien ne vaut une bonne pratique !"
+---
+
+import Container from "../../components/Container.astro";
+import TextWithImage from "../../components/TextWithImage.astro";
+import { Image } from "astro:assets";
+import Person from "../../components/Person.astro";
+
+<Container>
+
+<TextWithImage order="imageText">
+
+<Image
+  slot="content2"
+  src="/img/photos/parada.jpg"
+  width={800}
+  height={500}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
+
+<section slot='content1'>
+## Dates de nos pratiques de tango argentin
+
+1er octobre 2023 de 15h00 à 18h00  
+12 novembre 2023 (avec stage, plus de détails prochainement)  
+3 décembre 2023 de 15h00 à 18h00  
+21 janvier 2024 (avec stage, plus de détails prochainement)  
+11 février 2024 de 15h00 à 18h00
+
+### Comment y participer ?
+
+📍Les pratiques auront lieu à la salle Jacques Mathieu, place de la Mairie (aile droite de la mairie) à Trept.
+
+L'adhesion de 10 euros à l'année est demandée pour y participer. L'entrée est ensuite libre !
+
+</section>
+</TextWithImage>
+
+<TextWithImage order="imageText">
+<Image
+  slot="content1"
+  src="/img/photos/newsletter.jpg"
+  width={800}
+  height={500}
+  format="webp"
+  alt="Jambes qui dansent"
+/>
+
+<section slot='content2'>
+<h2>Pour ne rien rater</h2>
+
+<p>
+  Pour être tenu au courant de nos futures pratiques, milongas et festival,
+  abonnez-vous à notre newsletter
+</p>
+<div class="ml-embedded form-container text-dark" data-form="eVDGbP" />
+
+</section>
+</TextWithImage>
+</Container>
