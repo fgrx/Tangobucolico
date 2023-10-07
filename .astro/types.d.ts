@@ -206,9 +206,9 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
-"pratiques.mdx": {
-	id: "pratiques.mdx";
-  slug: "pratiques-de-tango";
+"pratiques-stages-tango.mdx": {
+	id: "pratiques-stages-tango.mdx";
+  slug: "pratiques-stages-tango";
   body: string;
   collection: "pages";
   data: any

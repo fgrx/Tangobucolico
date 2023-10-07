@@ -141,7 +141,7 @@ export default {
                 @click="sendMessage"
                 color="primary"
                 typeButton="button"
-                class="mt-5 mr-2 "
+                
                 :disabled="!isFormCompleted"
                 >Envoyer</Btn
               >

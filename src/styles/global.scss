@@ -18,3 +18,15 @@
 p {
   margin-bottom: 1em !important;
 }
+
+button {
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+strong {
+  font-weight: 900 !important;
+  font-size: 1.1em;
+}

@@ -38,7 +38,7 @@ const textColorComputed = computed(() =>
 </script>
 
 <template>
-  <div>
+  <div class="my-3">
     <button
       @click="clickAction"
       :type="typeButton"
