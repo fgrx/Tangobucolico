@@ -199,6 +199,13 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
+"milongas copy.mdx": {
+	id: "milongas copy.mdx";
+  slug: "milongas-bals-de-tango";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdx"] };
 "milongas.mdx": {
 	id: "milongas.mdx";
   slug: "milongas-bals-de-tango";
