@@ -243,17 +243,14 @@ import { Image } from "astro:assets";
 />
 
 <TextWithImage order="imageText">
-
-{" "}
-
-<Image
-  slot="content1"
-  src="/img/photos/festival/2024/parada2.jpg"
-  height={600}
-  width={1000}
-  format="webp"
-  alt="Jambes de danseurs de tango"
-/>
+  <Image
+    slot="content1"
+    src="/img/photos/festival/2024/parada2.jpg"
+    height={600}
+    width={1000}
+    format="webp"
+    alt="Jambes de danseurs de tango"
+  />
 
   <section slot="content2">
     ## Informations pratiques
@@ -274,15 +271,78 @@ import { Image } from "astro:assets";
             href="https://www.covievent.org/covoiturage/festival-tango-bucolico/181d87e9dc9fc1c5f5702efd56a46bf1"
 
         >
-            <Btn class="mb-6" typeButton="button">Groupe Facebook du festival</Btn>
+          <Btn class="mb-6" typeButton="button">Groupe Facebook du festival</Btn>
         </a>
     </div>
 
     ### Apportez vôtre gobelet
+
     Danser ça donne soif ! Pour se ravitailler, des gobelets consignés seront mis à disposition. Cependant, nous vous conseillons d'apporter le votre pour éviter les temps d'attente et limiter les risques de rupture de stock.
 
   </section>
 </TextWithImage>
+
+<section class="bg-primaryLight">
+  <div class=" container mx-auto py-8 text-center">
+    ## Tous les tarifs
+    <table class="table-fixed w-full ">
+      <thead>
+        <tr>
+          <th ></th>
+          <th>Non adhérent·es</th>
+          <th >Adhérent·es</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Pass milongas</td>
+          <td>60€</td>
+          <td>50€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Pass milongas & stages</td>
+          <td>90€</td>
+          <td>75€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Pass 2 stages</td>
+          <td>35€</td>
+          <td>30€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Stage à l'unité</td>
+          <td>20€</td>
+          <td>17€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Milonga vendredi soir</td>
+          <td>15€</td>
+          <td>12€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Milonga samedi après-midi</td>
+          <td>12€</td>
+          <td>9€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Milonga & concert Beltango samedi soir</td>
+          <td>28€</td>
+          <td>25€</td>
+        </tr>
+        <tr class="border border-primaryMedium">
+          <td class="text-right">Milonga dimanche après-midi</td>
+          <td>12€</td>
+          <td>9€</td>
+        </tr>
+      </tbody>
+    </table>
+
+     <a target="_blank" href="https://www.helloasso.com/associations/tango-bucolico/evenements/festival-tango-bucolico-2024">
+            <Btn >Réservez sur Helloasso</Btn>
+          </a>
+
+  </div>
+</section>
 
 <TextWithImage order="imageText">
 
