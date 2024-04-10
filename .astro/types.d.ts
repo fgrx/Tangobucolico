@@ -227,8 +227,8 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
-"tango-bucolico-festival-2023 copy.mdx": {
-	id: "tango-bucolico-festival-2023 copy.mdx";
+"tango-bucolico-festival-2023.mdx": {
+	id: "tango-bucolico-festival-2023.mdx";
   slug: "tango-bucolico-festival";
   body: string;
   collection: "pages";

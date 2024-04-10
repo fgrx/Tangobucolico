@@ -6,12 +6,13 @@ export interface Props {
   image: string;
   content?: string;
   location?: string;
-  size?: number;
+  size?: "big";
   float?: "left" | "right";
   center: boolean;
+  form?:"square"|"circle;"
 }
 
-const { title, image, content, location, size, float, center } = Astro.props;
+const { title, image, content, location, size, float,form, center } = Astro.props;
 
 let mainClass = "";
 
@@ -19,22 +20,29 @@ if (float) {
   mainClass += `float-${float} `;
 }
 
-if (size) {
-  mainClass += `w-${size} `;
+let imageClass="portrait-image"
+
+if (size==="big") {
+  imageClass="portrait-image-big"
+}
+
+let formClass="rounded-full"
+if(form==="square"){
+  formClass="rounded-lg"
 }
 ---
 
 <div
-  class={`${mainClass}flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-primary rounded-xl`}
+  class={`${mainClass}flex flex-col items-center p-6 transition-colors duration-200 transform cursor-pointer group hover:bg-primary rounded-xl`}
 >
-  <div class="portrait-image">
+  <div class={imageClass}>
     <Image
-      class=" object-cover rounded-full ring-4 ring-gray-300 w-150 h-150"
+      class={`${formClass} object-cover"`}
       src={image}
       alt=""
       format="webp"
-      height={150}
-      width={150}
+      height={300}
+      width={300}
     />
   </div>
 
@@ -62,6 +70,11 @@ img{
 .portrait-image{
   height:170px !important;
   width:170px !important;
+}
+
+.portrait-image-big{
+  height:300px !important;
+  width:300px !important;
 }
 
 </style>

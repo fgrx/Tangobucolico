@@ -1,0 +1,12 @@
+---
+const{bgImage}=Astro.props;
+---
+<div style={`background-image:url('${bgImage}')`}>
+    <div
+        class=" flex items-center justify-center text-white h-full w-full"
+    >
+        <div class="container">
+            <slot name="content" />
+        </div>
+    </div>
+</div>

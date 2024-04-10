@@ -2,17 +2,20 @@
 export interface Props {
   order: "imageText" | "textImage";
   bgcolor: string;
+  invert?:boolean;
 }
 
-const { order, bgcolor } = Astro.props;
+const { order, bgcolor, invert } = Astro.props;
 
 const content1 = order === "imageText" ? "md:3/5" : "md:2/5 ";
 const content2 = order === "imageText" ? "md:2/5" : "md:3/5";
+
+const inversionClass=invert?"order-last  ":"order-first"
 ---
 
 <div class=`md:p-1 bg-${bgcolor}`>
-  <div class=` container mx-auto my-20 md:flex md:flex-row md:gap-8 px-4`>
-    <div class=`basis-${content1} flex-1 content `>
+  <div class=` container mx-auto my-8 md:my-14 md:flex md:flex-row md:gap-8 px-4`>
+    <div class=`basis-${content1} flex-1 content ${inversionClass}`>
       <slot name="content1" />
     </div>
 

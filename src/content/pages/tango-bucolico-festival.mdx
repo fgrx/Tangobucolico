@@ -1,33 +1,229 @@
 ---
 title: "Tango Bucólico Festival 2024"
-subtitle: "3ème édition, 3 jours de danse"
+subtitle: "3ème édition, du vendredi 5 au dimanche 7 juillet 2024"
 slug: "tango-bucolico-festival"
 description: "Fort de nos 2 éditions précédentes, le Festival Tango Bucólico, prend de l'ampleur ! Nous avons ajouté le vendredi soir pour 3 jours de fête !"
 image: "/img/photos/orchestre.jpg"
 ogImage: "/img/photos/festival/festivalbanner.jpg"
+hasTopBanner: true
 ---
 
 import ContactForm from "../../components/vue/ContactForm.vue";
 import Person from "../../components/Person.astro";
 import Btn from "../../components/vue/Btn.vue";
 import TextWithImage from "../../components/TextWithImage.astro";
+import TextOverImage from "../../components/TextOverImage.astro";
 import Gallerie from "../../components/Gallerie.astro";
 import { Image } from "astro:assets";
 
-<TextWithImage order="imageText">
+<TextOverImage bgImage="img/photos/festival/backgroundimg2024.webp">
+    <div slot="content" class="container" >
+      <div class="container mx-auto  my-20 lg:flex lg:flex-row lg:gap-8 px-4">
+          <div class="lg:basis-3/5 lg:flex-1">
+              <Image
+                  src="/img/photos/festival/logo-tango-festival.svg"
+                  width={1200}
+                  height={450}
+                  alt="Logo du festival de tango argentin à Crémieu"
+                  slot="content1"
+                  class="max-w-md lg:max-w-full text-center mx-auto"
+                />
+                <div class='mx-auto text-center font-semibold  text-xl lg:text-3xl mt-3'>
+                  Du vendredi 5 au dimanche 7 juillet 2024 à Crémieu
+                </div>
+          </div>
 
-        <Image slot="content1" src="/img/photos/bando.jpg" width={800} height={500} format="webp" alt="Bandonéon posé sur une chaise" />
+          <div class="lg:basis-2/5  md:block lg:flex-1 ">
+            <div class="my-5 lg:my-14 uppercase text-xl md:text-3xl lg:text-5xl font-bold text-center lg:text-right ">
+              4 Milongas<br/>
+              20H de danse<br/>
+              2 orchestres<br/>
+              2 stages<br/>
+            </div>
+          </div>
+      </div>
+    </div>
 
-    <section slot="content2">
-        ## Programme
+</TextOverImage>
 
-        Nous sommes actuellement en train de travailler sur la programmation du festival 2024. Mais vous pouvez déjà noter dans votre agenda les 3 jours suivants :
+<section>
+  <div class="container mx-auto my-8 ">
+    <div class="md:grid md:grid-cols-3 gap-8 ">
 
-        ### Vendredi 5, samedi 6 et dimanche 7 juillet 2024
+      <div class="col-span-2 order-last">
+        <div class='mx-8 md:mx-0'>
+          <h1 class='text-5xl mb-8 text-center' >Festival de tango de Crémieu</h1>
+          <p>Le Festival Tango Bucòlico, c’est un week-end de tango argentin à la campagne, à 45mn de Lyon et de Grenoble !</p>
+          <p>Des milongas et concerts dans une belle grande salle avec 200m² de parquet, ou en extérieur dans le Cloître au coeur de la magnifique cité médiévale de Crémieu (38).</p>
+          <p>Mais c'est aussi des ateliers pour perfectionner son tango et une séance de yoga le dimanche matin offerte à toutes les personnes qui achètent le pass 4 milongas (avec ou sans stages).</p>
+          <p class="text-2xl">Ce week-end vous attendent tango bucolique, yoga, balades en campagne et détente aux terrasses des cafés !</p>
+        </div>
+      </div>
+
+      <div class="bg-primaryLight rounded-lg text-center  py-4 pl-4 pr-4">
+        <p>
+          <span class="text-3xl">Pass 4 milongas :</span><br/>
+          Non adhérent·es 60€<br/>
+          Adhérent·es 50€
+        </p>
+
+        <p>
+          <span class="text-3xl">Pass 4 milongas + stages :</span><br/>
+          Non adhérent·es 90€<br/>
+          Adhérent·es 75€
+        </p>
+
+        <p>
+          Tous les tarifs et réservations :
+          <a target="_blank" href="https://www.helloasso.com/associations/tango-bucolico/evenements/festival-tango-bucolico-2024">
+            <Btn >Réservez sur Helloasso</Btn>
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 my-4 xl:mt-8 md:grid-cols-3 xl:grid-cols-3">
+    <Person
+      title="Orchestre l'Armenonville"
+      image="/img/photos/festival/2024/armenonville.jpg"
+      content="Orchestre du vendredi soir"
+      location="France"
+      size="big"
+      form="square"
+    />
+    <Person
+      title="Orchestre Beltango"
+      image="/img/photos/festival/2024/beltango.jpg"
+      content="Orchestre du samedi soir"
+      location="Serbie"
+      size="big"
+      form="square"
+    />
+    <Person
+      title="Marie Primat"
+      image="/img/photos/festival/2024/marieprima.jpg"
+      content="Stages technique & musicalisation"
+      location="Grenoble"
+      size="big"
+      form="square"
+    />
+  </div>
+</section>
+
+<section class='bg-primaryLight xl:py-8'>
+  <div class="text-center"><h2>L'équipe des DJS</h2></div>
+
+  <div class=" grid grid-cols-2 gap-4 mt-4  md:grid-cols-4 xl:grid-cols-4 text-center">
+    <Person
+      title="TDJ Fabien Grignoux"
+      image="/img/photos/festival/2024/fabien.jpg"
+      content="Vendredi soir"
+      location="Lyon / Crémieu"
+    />
+
+    <Person
+      title="TDJ Marinette Petitpas "
+      image="/img/photos/festival/2024/marinette.jpg"
+      content="Samedi après-midi"
+      location="Rennes"
+    />
+
+    <Person
+      title="TDJ Marc Tommasi "
+      image="/img/photos/festival/2024/marctomasi.jpg"
+      content="Samedi soir"
+      location="Marseille"
+    />
+
+
+    <Person
+      title="TDJ Carmen María Hergos "
+      image="/img/photos/festival/2024/carmen.jpg"
+      content="Dimanche après-midi"
+      location="Barcelone / Mexico"
+    />
+
+  </div>
+</section>
+
+<TextWithImage order="imageText" invert="true">
+
+    <Image slot="content2" src="/img/photos/bando.jpg" width={800} height={500} format="webp" alt="Bandonéon posé sur une chaise" />
+
+    <section slot="content1">
+        ## Vendredi 5 juillet
+
+        ### 19h30 - 20h30 Concert de l'Armenonville
+        Concert en accès libre offert par les restaurants de la place. Possibilité de danser en baskets.
+
+        Lieu : Place de la nation
+
+        ### 22h00 - 03h00 Milonga
+        Avec TDJ Fabien Grignoux(Crémieu)
+
+        Lieu : Salle des fêtes de Crémieu<br/>
+        Tarif 15€, adhérents 12€
+
 
     </section>
 
 </TextWithImage>
+
+<TextWithImage order="imageText">
+
+    <Image slot="content2" src="/img/photos/orchestre.jpg" width={800} height={500} format="webp" alt="Orchestre de tango qui joue" />
+
+    <section slot="content1">
+        ## Samedi 6 juillet
+
+        ### 11h00 - 12h30 Stage musicalité avec Marie Primat
+
+        Lieu : Salle des fêtes<br/>
+        Tarif à l'unité 20€/17€, stages samedi+dimanche 35€/30€
+
+        ### 15H00 - 19h00 Milonga
+        Avec TDJ Marinette Petitpas (Lille)
+
+        Lieu : Salle des fêtes de Crémieu<br/>
+        Tarif 12€, adhérents 9€
+
+        ### 21H00 - 03h00 Milonga avec l'orchestre Beltango
+        et DJ Marc Tomassi (Marseille)
+
+        Lieu : Salle des fêtes de Crémieu<br/>
+        Tarif 28€, adhérents 25€
+    </section>
+
+</TextWithImage>
+
+<TextWithImage order="imageText">
+
+    <Image class='hidden md:block' slot="content1" src="/img/photos/festival/2024/cloitredimanche.jpg" width={800} height={500} format="webp" alt="Bal de tango dans le cloitre de Crémieu" />
+
+    <section slot="content2">
+        ## Dimanche 7 juillet
+        ### 11h00 - 12h30 Yoga
+        Avec Caroline Miette<br/>
+        Offert avec le pass milonga & milonga+stages<br/>
+        Lieu : Salle des fêtes
+
+        ### 13h30 - 15h00 Stage technique avec Marie Primat
+
+        Lieu : Salle des fêtes<br/>
+        Tarif à l'unité 20€/17€, stages samedi+dimanche 35€/30€
+
+        ### 15H00 - 19h00 Milonga
+        Avec TDJ Carmen María Hergos (Barcelone - Mexico)
+
+        Lieu : cloître de Crémieu (sol : dalles polies)<br/>
+        Tarif 12€, adhérents 9€
+    </section>
+
+</TextWithImage>
+`
 
 <Gallerie
   title="On danse où ? "
@@ -39,12 +235,54 @@ import { Image } from "astro:assets";
       description: "Dansez sur les dalles polies par 4 siècles d'histoire",
     },
     {
-      image: "/img/photos/cremieu/salledesfetes.jpg",
+      image: "/img/photos/salledesfetes.jpg",
       title: "Salle des fêtes",
       description: "Un parquet immense en plein coeur de Crémieu",
     },
   ]}
 />
+
+<TextWithImage order="imageText">
+
+{" "}
+
+<Image
+  slot="content1"
+  src="/img/photos/festival/2024/parada2.jpg"
+  height={600}
+  width={1000}
+  format="webp"
+  alt="Jambes de danseurs de tango"
+/>
+
+  <section slot="content2">
+    ## Informations pratiques
+
+    ### Liste des exposant·es
+    - Chaussures Tang'Olica (Chambery)
+    - Vêtements femmes "Prêt à danser by LS" (Lyon)
+    - Les bijoux D'hélène Lagneux
+    <br/>
+
+
+    ### Pensez au covoiturage !
+    Faire la route à plusieurs c'est beaucoup plus sympa ! Si vous avez des sièges libres dans votre voiture ou si vous cherchez une petite place jusqu'à Crémieu, n'hésitez pas à cliquer sur le bouton ci-dessous pour vous organiser sur le groupe Facebook de l'événement.
+
+    <div class="mt-6 text-center">
+        <a
+            target="_blank"
+            href="https://www.covievent.org/covoiturage/festival-tango-bucolico/181d87e9dc9fc1c5f5702efd56a46bf1"
+
+        >
+            <Btn class="mb-6" typeButton="button">Groupe Facebook du festival</Btn>
+        </a>
+    </div>
+
+    ### Apportez votre gobelet
+    Danser ça donne soif ! Pour se ravitailler, des gobelets consignés seront mis à disposition. Cependant, nous vous conseillons d'apporter le votre pour éviter les temps d'attente et limiter les risques de rupture de stock.
+
+  </section>
+</TextWithImage>
 
 <TextWithImage order="imageText">
 
@@ -58,11 +296,7 @@ import { Image } from "astro:assets";
 />
 
 <section slot="content1">
-  ## Recevoir par mail nos événements ?
-  <p>
-    Pour ne pas rater aucune info sur notre festival, inscrivez-vous à notre
-    newsletter 😉
-  </p>
+  ## Une question ?
   <ContactForm client:load />
 </section>
 
