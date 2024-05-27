@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import Choice from "./Choice.astro"
 import festival from "../../assets/img/photos/orchestre.jpg";
 import milonga from "../../assets/img/photos/balphoto2.jpg";
 import pratique from "../../assets/img/photos/pratique.jpg";
@@ -7,75 +7,8 @@ import pratique from "../../assets/img/photos/pratique.jpg";
 
 <div class="container mx-auto my-4">
   <div class="md:grid grid-cols-3 gap-8 mx-4">
-    <div class="relative my-6">
-      <a href="/tango-bucolico-festival">
-        <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
-        <div
-          class="absolute flex items-center justify-center text-white h-full w-full"
-        >
-          <div>
-            <p class="text-4xl title">Festival tango 2024</p>
-            <p class="text-xl -mt-8">5, 6 et 7 juillet à Crémieu</p>
-          </div>
-        </div>
-
-        <Image
-          class="object-cover h-72 w-full rounded-lg"
-          src={festival}
-          width={350}
-          format="webp"
-          alt="Une musicienne dans un bal de tango argentin"
-        />
-      </a>
-    </div>
-
-    <div class="relative my-6">
-      <a href="/milongas-bals-de-tango">
-        <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
-        <div
-          class="absolute flex items-center justify-center text-white h-full w-full"
-        >
-          <div>
-            <p class="text-4xl title">Milongas</p>
-            <p class="text-xl -mt-8">Bals de tango argentin</p>
-          </div>
-        </div>
-
-        <div>
-          <Image
-            class="object-cover h-72 w-full rounded-lg"
-            src={milonga}
-            width={350}
-            format="webp"
-            alt="Bal de tango dans le cloitre"
-          />
-        </div>
-      </a>
-    </div>
-
-
-    <div class="relative my-6">
-      <a href="/pratiques-stages-tango">
-        <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
-        <div
-          class="absolute flex items-center justify-center text-white h-full w-full"
-        >
-          <div>
-            <p class="text-4xl title">Pratiques tango & stages</p>
-            <p class="text-xl -mt-8">Pour s'entrainer, expérimenter et progresser !</p>
-          </div>
-        </div>
-
-        <div>
-          <Image
-            class="object-cover h-72 w-full rounded-lg"
-            src={pratique}
-            width={350}
-            format="webp"
-            alt="Pratique de tango"
-          />
-        </div>
-      </a>
-    </div>
+    <Choice href="/tango-bucolico-festival" title="Festival tango 2024" subtitle="5, 6 et 7 juillet à Crémieu" image={festival} />
+    <Choice href="/milongas-bals-de-tango" title="Milongas" subtitle="Bals de tango argentin" image={milonga} />
+    <Choice href="/pratiques-stages-tango" title="Pratiques tango & stages" subtitle="Pour s'entrainer, expérimenter et progresser !" image={pratique} />
   </div>
 </div>
