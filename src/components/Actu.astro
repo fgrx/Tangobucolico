@@ -1,0 +1,34 @@
+---
+
+interface actu{
+   	title: string;
+	text: string;
+    date:string;
+	href: string;
+    image?:string;
+    place:string
+}
+
+export interface Props {
+    actu:actu;
+}
+
+const { href, title, text,date,place,image } = Astro.props.actu;
+---
+
+<a class="my-6" class="actu-item" href={href}>
+    <div>
+        <h3 class="text-xl">{title}</h3>
+        <p>
+            {date} à {place}<br/>
+            {text}
+        </p>
+    </div>
+</a>
+
+<style>
+	.actu-item{
+        text-decoration:none;
+        margin-bottom:1em;
+    }
+</style>

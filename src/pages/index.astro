@@ -5,25 +5,46 @@ import Logo from "../assets/img/tangobucolico_logo_rond.png";
 import MailInscriptionBanner from "../components/home/MailInscriptionBanner.astro";
 import MainChoice from "../components/home/MainChoice.astro";
 import TextWithImage from "../components/TextWithImage.astro";
+import Actu from "../components/Actu.astro";
+import actus from "../actu.json"
 
 const title = "Tango Bucólico, le tango argentin à Crémieu et ses environs";
+
+
 ---
 
 <Layout title={title}>
   <main>
     <div class="text-center mt-6">
-      <Image
-        class="mx-auto"
-        src={Logo}
-        width={450}
-        height={450}
-        format="webp"
-        alt="Logo de Tango Bucólico"
-      />
+      
+      <div>
+        <section>
+          <Image
+            class="mx-auto"
+            src={Logo}
+            width={250}
+            height={250}
+            format="webp"
+            alt="Logo de Tango Bucólico"
+          />
 
-      <h1 class="title-site text-5xl mb-4">Tango Bucólico</h1>
-      <p class="text-xl mb-2">Dansez le tango argentin en Nord-Isère</p>
-
+          <h1 class="title-site text-5xl mb-4">Tango Bucólico</h1>
+          <p class="text-xl mb-2">Dansez le tango argentin en Nord-Isère</p>
+        </section>  
+      </div>
+     
+      <div class="my-8 text-left bg-primaryLight">
+        <div class="container mx-auto px-6 py-10">
+          <section>
+            <h2 class="text-3xl text-center">Quand est-ce qu'on danse ?</h2>
+            <p class="text-2xl text-center">Nos prochains événements de tango argentin du côté Crémieu</p>
+            {actus.map((actu) => (
+              <Actu actu={actu} />
+            ))}
+          </section>  
+        </div>
+      </div>
+        
       <MainChoice />
 
       <MailInscriptionBanner />
