@@ -1,16 +1,16 @@
 [
   {
-    "date": "Dimanche 23 juin 2024",
-    "title": "Stage & pratique sur les sacadas",
+    "title": "💃🏽🕺 Stage & pratique sur les sacadas",
+    "date": " Dimanche 23 juin 2024",
+    "place": "Trept",
     "text": "Avec Edouardo et Nathalie, suivit d'une pratique.",
-    "href": "/tango-bucolico-festival",
-    "place": "Trept"
+    "href": "/pratiques-stages-tango"
   },
   {
+    "title": "🎉 Festival Tango Bucolico de Crémieu",
     "date": "5 au 7 juillet 2024",
-    "title": "Festival Tango Bucolico de Crémieu",
+    "place": "Crémieu",
     "text": "4 milongas, 20h de danse, 2 orchestres et 2 stages !",
-    "href": "/tango-bucolico-festival",
-    "place": "Crémieu"
+    "href": "/tango-bucolico-festival"
   }
 ]
