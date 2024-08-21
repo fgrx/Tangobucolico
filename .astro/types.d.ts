@@ -227,6 +227,13 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
+"tango-bucolico-festival-2024.mdx": {
+	id: "tango-bucolico-festival-2024.mdx";
+  slug: "tango-bucolico-festival";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdx"] };
 "tango-bucolico-festival.mdx": {
 	id: "tango-bucolico-festival.mdx";
   slug: "tango-bucolico-festival";
