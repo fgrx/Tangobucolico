@@ -1,9 +1,23 @@
 [
   {
-    "title": "🏖️ Milonga avec orchestre au cloître de Crémieu",
+    "title": "Pratique à Trept ! 💃🏽",
+    "date": "6 octobre 2024",
+    "place": "Trept",
+    "text": "C'est le retour de nos pratiques à Trept !",
+    "href": "/pratiques-stages-tango"
+  },
+  {
+    "title": "Pratique à Trept ! 💃🏽",
+    "date": "10 novembre 2024",
+    "place": "Trept",
+    "text": "Venez pratiquer dans une ambiance détendue.",
+    "href": "/pratiques-stages-tango"
+  },
+  {
+    "title": "🎉 Milonga à la salle des fêtes de Crémieu",
     "date": "25 aout 2024",
     "place": "Crémieu",
-    "text": "Une milonga avec DJ Perrine et l'orchestre Los Suplentes (+ invitées) !",
+    "text": "Et c'est DJ Perrine qui nous régale de ses belles tandas !",
     "href": "/milongas-bals-de-tango"
   }
 ]
