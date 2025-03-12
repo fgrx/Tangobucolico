@@ -213,8 +213,8 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
-"pratiques-stages-tango copy.mdx": {
-	id: "pratiques-stages-tango copy.mdx";
+"pratiques-stages-tango copie avec stage.mdx": {
+	id: "pratiques-stages-tango copie avec stage.mdx";
   slug: "pratiques-stages-tango";
   body: string;
   collection: "pages";
