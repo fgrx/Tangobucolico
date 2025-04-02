@@ -1,5 +1,12 @@
 [
   {
+    "title": "🎉 Le programme du festival est disponible !",
+    "date": "02 avril 2024-5",
+    "place": "Crémieu",
+    "text": "Découvrez notre nouvelle programmation pour le plus bucolique et weekend tango",
+    "href": "/tango-bucolico-festival"
+  },
+  {
     "title": "🚀 Milonga avec DJ Gabbo",
     "date": "Samedi 29 mars 2025 de 15h00 à 19h00",
     "place": "Crémieu",
@@ -12,12 +19,5 @@
     "place": "Trept",
     "text": "Venez pratiquer dans une ambiance détendue.",
     "href": "/pratiques-stages-tango"
-  },
-  {
-    "title": "🎉 Milonga à la salle des fêtes de Crémieu",
-    "date": "25 aout 2024",
-    "place": "Crémieu",
-    "text": "Et c'est DJ Perrine qui nous régale de ses belles tandas !",
-    "href": "/milongas-bals-de-tango"
   }
 ]
