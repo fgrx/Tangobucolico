@@ -1,0 +1,35 @@
+---
+import TextOverImage from "../../components/TextOverImage.astro";
+import { Image } from "astro:assets";
+
+const link = "/tango-bucolico-festival"
+const description = "Du vendredi 4 au dimanche 6 juillet 2025 à Crémieu"
+const image = "/img/photos/festival/logo-tango-festival.svg"
+const imageAlt= "Bannière du festival de tango argentin à Crémieu"
+---
+<a href={link}>
+<div class="container mx-auto rounded-md">
+<TextOverImage bgImage="/img/photos/festival/2025/banner2025-site.jpg">
+    <div slot="content" class="container" >
+        
+      <div class="container mx-auto  my-20 lg:flex lg:flex-row drop-shadow-md">
+          <div class="lg:basis-3/5 lg:flex-1 ">
+              <Image
+                  src={image}
+                  width={1200}
+                  height={450}
+                  alt={imageAlt}
+                  slot="content1"
+                  class="max-w-xs lg:max-w-full text-center mx-auto"
+                />
+                <div class='mx-auto text-center font-semibold  text-xl lg:text-5xl mt-3'>
+                  {description}
+                </div>
+          </div>
+
+        
+      </div>
+    </div>
+</TextOverImage>
+</div>
+</a>

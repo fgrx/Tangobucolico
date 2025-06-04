@@ -6,6 +6,7 @@ import MailInscriptionBanner from "../components/home/MailInscriptionBanner.astr
 import MainChoice from "../components/home/MainChoice.astro";
 import TextWithImage from "../components/TextWithImage.astro";
 import ActuList from "../components/home/ActuList.astro";
+import TopHome from "../components/home/TopHome.astro"
 import actus from "../actu.json"
 
 const title = "Tango Bucólico, le tango argentin à Crémieu et ses environs";
@@ -33,6 +34,8 @@ const title = "Tango Bucólico, le tango argentin à Crémieu et ses environs";
         </section>  
       </div>
      
+      <TopHome />
+
       <ActuList actus={actus} />
         
       <MainChoice />
