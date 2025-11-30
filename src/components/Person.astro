@@ -2,17 +2,18 @@
 import { Image } from "astro:assets";
 
 export interface Props {
-  title: string;
+  title?: string;
   image: string;
   content?: string;
   location?: string;
   size?: "big";
   float?: "left" | "right";
   center: boolean;
-  form?:"square"|"circle;"
+  form?: "square" | "circle;";
 }
 
-const { title, image, content, location, size, float,form, center } = Astro.props;
+const { title, image, content, location, size, float, form, center } =
+  Astro.props;
 
 let mainClass = "";
 
@@ -20,15 +21,15 @@ if (float) {
   mainClass += `float-${float} `;
 }
 
-let imageClass="portrait-image"
+let imageClass = "portrait-image";
 
-if (size==="big") {
-  imageClass="portrait-image-big"
+if (size === "big") {
+  imageClass = "portrait-image-big";
 }
 
-let formClass="rounded-full"
-if(form==="square"){
-  formClass="rounded-lg"
+let formClass = "rounded-full";
+if (form === "square") {
+  formClass = "rounded-lg";
 }
 ---
 
@@ -62,19 +63,18 @@ if(form==="square"){
 </div>
 
 <style scoped>
-img{
-  height:100% !important;
-  width:100% !important;
-}
+  img {
+    height: 100% !important;
+    width: 100% !important;
+  }
 
-.portrait-image{
-  height:170px !important;
-  width:170px !important;
-}
+  .portrait-image {
+    height: 170px !important;
+    width: 170px !important;
+  }
 
-.portrait-image-big{
-  height:300px !important;
-  width:300px !important;
-}
-
+  .portrait-image-big {
+    height: 300px !important;
+    width: 300px !important;
+  }
 </style>

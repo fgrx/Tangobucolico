@@ -1,23 +1,16 @@
 [
   {
-    "title": "Nouvelles dates pour les pratiques à Trept ! 💃🏽",
-    "date": "5 octobre 2025, 23 novembre 2025 , 1er février 2026",
-    "place": "Trept",
-    "text": "Venez pratiquer dans une ambiance détendue.",
-    "href": "/pratiques-stages-tango"
-  },
-  {
-    "title": "🎉 Le programme du festival est disponible !",
-    "date": "Du vendredi 04 juillet au dimanche 06 juillet 2025",
-    "place": "Crémieu",
-    "text": "Découvrez notre nouvelle programmation pour le plus bucolique et weekend tango !",
-    "href": "/tango-bucolico-festival"
-  },
-  {
-    "title": "🚀 Milonga avec DJ Gabbo",
-    "date": "Samedi 29 mars 2025 de 15h00 à 19h00",
+    "title": "🕺 Milonga avec DJ Nico A-Narco",
+    "date": "Samedi 10 janvier 2026 de 15h00 à 20h00",
     "place": "Crémieu",
     "text": "Sur le magnifique parquet de la salle des fêtes de Crémieu !",
     "href": "/milongas-bals-de-tango"
+  },
+  {
+    "title": "💃🏽 Nouvelles dates pour les pratiques à Trept ! 💃🏽",
+    "date": "1er février, 1er mar , 26 avril et 7 juin 2026",
+    "place": "Trept",
+    "text": "Venez pratiquer dans une ambiance détendue.",
+    "href": "/pratiques-stages-tango"
   }
 ]
