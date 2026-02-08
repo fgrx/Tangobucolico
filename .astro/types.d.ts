@@ -199,13 +199,6 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
-"milongas copy.mdx": {
-	id: "milongas copy.mdx";
-  slug: "milongas-bals-de-tango";
-  body: string;
-  collection: "pages";
-  data: any
-} & { render(): Render[".mdx"] };
 "milongas.mdx": {
 	id: "milongas.mdx";
   slug: "milongas-bals-de-tango";
@@ -241,8 +234,15 @@ declare module 'astro:content' {
   collection: "pages";
   data: any
 } & { render(): Render[".mdx"] };
-"tango-bucolico-festival-2025 copy.mdx": {
-	id: "tango-bucolico-festival-2025 copy.mdx";
+"tango-bucolico-festival-2025.mdx": {
+	id: "tango-bucolico-festival-2025.mdx";
+  slug: "tango-bucolico-festival";
+  body: string;
+  collection: "pages";
+  data: any
+} & { render(): Render[".mdx"] };
+"tango-bucolico-festival-default.mdx": {
+	id: "tango-bucolico-festival-default.mdx";
   slug: "tango-bucolico-festival";
   body: string;
   collection: "pages";

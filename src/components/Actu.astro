@@ -1,26 +1,27 @@
 ---
-import type actu from "../interfaces/actu"
+import type actu from "../interfaces/actu";
+import Btn from "../components/vue/Btn.vue";
 
 export interface Props {
-    actu:actu;
+  actu: actu;
 }
 
-const { href, title, text,date,place,image } = Astro.props.actu;
+const { href, title, text, date, place, image } = Astro.props.actu;
 ---
 
-<a class="my-8" class="actu-item" href={href}>
-    <div>
-        <h3 class="text-xl">{title}</h3>
-        <p>
-            {date} à {place}<br/>
-            {text}
-        </p>
-    </div>
-</a>
+<div class="mb-10">
+  <h3 class="text-xl">{title}</h3>
+  <p>
+    {date} à {place}<br />
+    {text}
+
+    <Btn to={href}>En savoir plus </Btn>
+  </p>
+</div>
 
 <style>
-	.actu-item{
-        text-decoration:none;
-        margin-bottom:1em;
-    }
+  .actu-item {
+    text-decoration: none;
+    margin-bottom: 1em;
+  }
 </style>

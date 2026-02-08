@@ -1,0 +1,39 @@
+---
+title: "Tango Bucólico Festival 2025"
+subtitle: "Du vendredi 4 au dimanche 6 juillet 2025"
+slug: "tango-bucolico-festival"
+description: "4ème édition du festival le plus bucolique à Crémieu !"
+image: "/img/photos/orchestre.jpg"
+ogImage: "/img/photos/festival/2025/banner2025-site.jpg"
+hasTopBanner: true
+---
+
+import ContactForm from "../../components/vue/ContactForm.vue";
+import Person from "../../components/Person.astro";
+import Btn from "../../components/vue/Btn.vue";
+import TextWithImage from "../../components/TextWithImage.astro";
+import TextOverImage from "../../components/TextOverImage.astro";
+import Gallerie from "../../components/Gallerie.astro";
+import { Image } from "astro:assets";
+
+<TextWithImage order="imageText">
+
+<Image
+  slot="content2"
+  src="/img/photos/pied4.jpg"
+  height={600}
+  width={1000}
+  format="webp"
+  alt="des jambes de danseurs"
+/>
+
+<section slot="content1">
+  ## Rendez-vous en 2026 pour une nouvelle édition !
+  <p>
+    Pour recevoir en avant première le programme de l'édition 2026,
+    inscrivez-vous à notre newsletter :
+  </p>
+  <div class="ml-embedded form-container text-dark" data-form="eVDGbP" />
+</section>
+
+</TextWithImage>
