@@ -29,27 +29,29 @@ const emits = defineEmits(["click", "btn-click"]);
 const clickAction = () => emits("click", "btn-click");
 
 const bgColorComputed = computed(() =>
-  disabledRef.value ? "primaryMedium" : color
+  disabledRef.value ? "primaryMedium" : color,
 );
 
 const textColorComputed = computed(() =>
-  disabledRef.value ? "light" : textColor
+  disabledRef.value ? "light" : textColor,
 );
 </script>
 
 <template>
   <div class="my-3">
-    <button
-      @click="clickAction"
-      :type="typeButton"
-      :disabled="disabled"
-      :class="`inline-block pulse px-6 py-3 text-md font-medium leading-6 text-center text-${textColorComputed}  transition bg-${bgColorComputed}  rounded shadow ripple focus:outline-none `"
-    >
-      <span class="uppercase">
-        <slot></slot>
-      </span>
-      <span class="text-xs"><slot name="subText"></slot></span>
-    </button>
+    <a :href="to">
+      <button
+        @click="clickAction"
+        :type="typeButton"
+        :disabled="disabled"
+        :class="`inline-block pulse px-6 py-3 text-md font-medium leading-6 text-center text-${textColorComputed}  transition bg-${bgColorComputed}  rounded shadow ripple focus:outline-none `"
+      >
+        <span class="uppercase">
+          <slot></slot>
+        </span>
+        <span class="text-xs"><slot name="subText"></slot></span>
+      </button>
+    </a>
   </div>
 </template>
 
