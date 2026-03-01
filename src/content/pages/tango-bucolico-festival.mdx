@@ -74,38 +74,93 @@ import { Image } from "astro:assets";
 
 </section>
 
+<section class="container mx-auto">
+<div class="md:grid grid-cols-2 gap-8 mx-4">
+
+  <div class="relative my-6">
+        <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
+        <div
+          class="absolute flex items-start p-8 justify-center text-white h-full w-full"
+        >
+          <div class="text-center">
+            <p class="text-4xl title">Quinteto Pimienta</p>
+            <p class="text-xl -mt-8">Concert du samedi soir</p>
+          </div>
+        </div>
+
+        <div >
+          <Image
+            class="object-cover h-full w-full rounded-lg"
+            src="/img/photos/festival/2026/pimenta.jpg"
+            width={550}
+            height={350}
+            format="webp"
+            alt="Pratique de tango"
+          />
+        </div>
+    </div>
+
+  <div class="relative my-6">
+        <div class="absolute bg-black opacity-20 h-full w-full rounded"></div>
+        <div
+          class="absolute flex items-start p-8  justify-center text-white h-full w-full"
+        >
+          <div class="text-center">
+            <p class="text-4xl title">Duo Crioyazo</p>
+            <p class="text-xl -mt-8">Concert du vendredi soir</p>
+          </div>
+        </div>
+
+        <div>
+          <Image
+            class="object-cover h-full w-full rounded-lg"
+            src="/img/photos/festival/2026/duocrio2.jpg"
+            width={550}
+            height={350}
+            format="webp"
+            alt="Pratique de tango"
+          />
+        </div>
+    </div>
+
+</div>
+</section>
+
 <section class='bg-primaryLight py-4 md:py-8'>
-  <div class="text-center"><h2>L'équipe des DJs</h2></div>
+  <div class="container mx-auto">
+    <div class="text-center"><h2>L'équipe des DJs</h2></div>
 
-  <div class=" grid grid-cols-2 gap-4 mt-4  md:grid-cols-4 xl:grid-cols-4 text-center">
+    <div class=" grid grid-cols-2 gap-4 mt-4  md:grid-cols-4 xl:grid-cols-4 text-center">
 
-    <Person
-      title="Marco Dozio"
-      image="/img/photos/festival/2026/marco.jpg"
-      content="Vendredi soir"
-      location="Côme - Italie"
-    />
+      <Person
+        title="Marco Dozio"
+        image="/img/photos/festival/2026/marco.jpg"
+        content="Vendredi soir"
+        location="Côme - Italie"
+      />
 
-    <Person
-      title="TDJ Perrine Bucólica"
-      image="/img/photos/festival/2025/perrine.jpg"
-      content="Samedi après-midi"
-      location="Crémieu"
-    />
+      <Person
+        title="TDJ Perrine Bucólica"
+        image="/img/photos/festival/2025/perrine.jpg"
+        content="Samedi après-midi"
+        location="Crémieu"
+      />
 
-    <Person
-      title="TDJ Marlou Pilou"
-      image="/img/photos/festival/2026/marlou.jpg"
-      content="Samedi soir"
-      location="Toulouse"
-    />
+      <Person
+        title="TDJ Marlou Pilou"
+        image="/img/photos/festival/2026/marlou.jpg"
+        content="Samedi soir"
+        location="Toulouse"
+      />
 
-    <Person
-      title="TDJ Adèle"
-      image="/img/photos/festival/2026/adele.jpg"
-      content="Dimanche après-midi"
-      location="Grenoble"
-    />
+      <Person
+        title="TDJ Adèle"
+        image="/img/photos/festival/2026/adele.jpg"
+        content="Dimanche après-midi"
+        location="Grenoble"
+      />
+
+    </div>
 
   </div>
 </section>
@@ -137,8 +192,6 @@ import { Image } from "astro:assets";
           <a href="https://maps.app.goo.gl/8yG2GBkjKPuZpSoi6" target="blank">
         📍Localiser sur Google Maps
         </a></Btn>
-
-
 
     </section>
 
